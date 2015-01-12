@@ -82,6 +82,11 @@ public class Interface_suite extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/me/myimageapp/map.jpg"))); // NOI18N
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/me/myimageapp/DOWN.png"))); // NOI18N
 
@@ -170,6 +175,11 @@ public class Interface_suite extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        //mettre un "if" si le perso n'a pas encore l'item "map"
+        new Map().setVisible(true);
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
