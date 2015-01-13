@@ -10,7 +10,7 @@ package treasure.quest;
  * @author Maëva
  */
 public class Interface_suite extends javax.swing.JFrame {
-
+    private static final Game game= new Game(); 
     /**
      * Creates new form Interface_suite
      */
